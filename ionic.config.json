@@ -1,0 +1,7 @@
+{
+  "name": "scci-mobile-app",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

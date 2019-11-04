@@ -1,0 +1,38 @@
+ion-content {
+    // --background: url("https://image.freepik.com/vecteurs-libre/abstrait-design-geometrique_23-2147829633.jpg") no-repeat center center / cover;
+    --background: url("../../../assets/images/bg-2.png") no-repeat center center / cover;
+
+    h1{
+        padding-left: 10px;
+        margin-bottom: 0;
+    }
+
+    form {
+        ion-item {
+            --padding-top: 0;
+        }
+    }
+
+    p.go-to-sign-in {
+        font-size: 0.9em;
+
+        a{
+            text-decoration: none;
+        }
+    }
+
+}
+
+ion-button {
+    --background: linear-gradient(to left top, #8e1dab, #a325a9, #b530a7, #c53ca5, #d449a4);
+    --padding-top: 1.7em;
+    --padding-bottom: 1.7em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.forget-password {
+    a{
+        color: #ccc;
+    }
+}

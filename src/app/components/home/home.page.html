@@ -1,0 +1,32 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-item lines="none">
+      <ion-avatar no-border slot="start">
+        <img src="https://thumbnailer.mixcloud.com/unsafe/160x160/profile/c/3/8/a/7305-4d74-4def-893d-ee6fccf64e05.jpg">
+      </ion-avatar>
+      <p *ngIf="currentUser">{{ currentUser?.email }}</p>
+    </ion-item>
+    <!-- <ion-title>
+      Home Page
+    </ion-title> -->
+
+    <!-- Logout User -->
+    <ion-buttons slot="end">
+      <ion-button *ngIf="authService.isAuthenticate()" (click)="logoutUser()">
+        <ion-icon slot="icon-only" name="log-out"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card class="purple-card">
+    <span class="dot-top"></span>
+    <span class="dot-bottom">
+      <span class="dot-little"></span>
+    </span>
+    <img class="transparency" src="https://image.freepik.com/vecteurs-libre/fond-colore-dynamique-vague-vibrante-coloree_1017-16948.jpg" />
+  </ion-card>
+
+  
+</ion-content>

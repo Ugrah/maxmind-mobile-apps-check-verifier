@@ -1,0 +1,55 @@
+.welcome-card img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+
+ion-content {
+  ion-card.purple-card {
+    --background: linear-gradient(to right bottom, #8e1dab, #a325a9, #b530a7, #c53ca5, #d449a4);
+
+    .dot-top {
+      position: absolute;
+      top: -1vh;
+      left: -1vh;
+      height: 15vh;
+      width: 15vh;
+      background-image: linear-gradient(to right bottom, rgba(255,255,255,0), rgba(255,255,255,0.08), rgba(255,255,255,0.3), rgba(255,255,255,0.5), rgba(255,255,255,0.65));
+      opacity: 0.4;
+      border-radius: 50%;
+      display: inline-block;
+      z-index: 0;
+    }
+
+    .dot-bottom {
+        position: absolute;
+        bottom: -3vh;
+        right: -2vh;
+        height: 15vh;
+        width: 15vh;
+        background-image: linear-gradient(to left top, rgba(255,255,255,0), rgba(255,255,255,0.05), rgba(255,255,255,0.2), rgba(255,255,255,0.4), rgba(255,255,255,0.5));
+        opacity: 0.4;
+        border-radius: 50%;
+        display: inline-block;
+        z-index: 1;
+
+        .dot-little {
+            position: absolute;
+            top: -1vh;
+            left: -4vh;
+            height: 10vh;
+            width: 10vh;
+            background-image: linear-gradient(to left top, rgba(255,255,255,0), rgba(255,255,255,0.05), rgba(255,255,255,0.2), rgba(255,255,255,0.4), rgba(255,255,255,0.5));
+            opacity: 0.9;
+            border-radius: 50%;
+            display: inline-block;
+            z-index: 0;
+        }
+    }
+  }
+}
+
+img.transparency {
+  width:100%;
+  height:100%;
+  opacity: 0;
+}

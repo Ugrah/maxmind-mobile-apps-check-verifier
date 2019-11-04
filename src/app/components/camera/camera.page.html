@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>camera</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <!-- Default Progressbar with 50 percent -->
+  <ion-progress-bar *ngIf="progressBarValue" [value]="progressBarValue"></ion-progress-bar>
+
+  <!-- <img src="../../../assets/dummies/other.png"> -->
+  <img [src]="selectedImage" *ngIf="selectedImage">
+  
+  <ion-card *ngIf="imageText">
+    <ion-card-header>
+      Image Text
+    </ion-card-header>
+    <ion-card-content>
+      {{ imageText }}
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Simulation with local image -->
+  <!-- <ion-button expand="block" (click)="onRecognize()">Simulation Recognize CMC7</ion-button> -->
+
+  <!-- button with camera image -->
+  <ion-button [disabled]="!selectedImage" expand="block" (click)="onRecognize()">Recognize text</ion-button>
+  
+</ion-content>

@@ -1,0 +1,20 @@
+ion-content {
+    // --overflow: hidden;
+    position: relative;
+    ion-card {
+        box-shadow: none !important;
+    }
+
+    ion-slides {
+        --bullet-background: var(--ion-color-medium);
+        --bullet-background-active: #8e1dab;
+    }
+}
+
+ion-footer {
+    ion-button {
+        --background: linear-gradient(to left top, #8e1dab, #a325a9, #b530a7, #c53ca5, #d449a4);
+        --padding-top: 1.7em;
+        --padding-bottom: 1.7em;
+    }
+}
